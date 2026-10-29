@@ -98,6 +98,47 @@ label notebook:
 
 
 label blackboard:
+    scene dark_classroom at bg_fit
+    with dissolve
+    with fade
+    $ courage += 1
+    "You approached the blackboard."
+    "Written in chalk were the words:"
+    centered "{color=#aaaaaa}WE ARE STILL WAITING.{/color}"
+    "You rubbed the words away."
+    "Beneath them was another sentence."
+    centered "{color=#aa3333}ONE STUDENT IS STILL MISSING.{/color}"
+    "The classroom door slammed shut."
+    u "You came back."
+    "You tried the handle."
+    "It would not open."
+    "Then, as suddenly as it had shut, the door opened again."
+    jump office
+label exit_attempt:
+    scene hallway at bg_fit
+    with dissolve
+    with fade
+    "You ran towards the main entrance."
+    "You grabbed the handle and pulled."
+    "The doors wouldnt move."
+    "Outside, the parking lot was completely empty."
+    "You looked through the glass again."
+    "Your motorcycle was gone."
+    centered "{color=#999999}Attendance is not finished.{/color}"
+    "The speaker above you crackled."
+    "Your phone began ringing."
+    "UNKNOWN NUMBER."
+    menu:
+        "Answer your phone?"
+        "Answer.":
+            jump phone
+        "Ignore "
+
+
+
+
+
+
 
 
     
