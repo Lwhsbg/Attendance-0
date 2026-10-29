@@ -9,7 +9,7 @@ label start:
     $ player_name = renpy.input("Enter your name:", default = "Alex").strip()
     if not player_name:
         $ player_name = "Alex"
-    scene black
+    scene dark_classroom at bg_fit
     with dissolve
     with fade
     "It was 8:13 PM."
@@ -22,5 +22,82 @@ label start:
     centered "{color=#999999}Class 3-B. Attendance will now begin.{/color}"
     "There were no evening classes at your school."
     centered "{color=#999999} Maya.{/color}"
-    ""
+    m "Present."
+    "You froze."
+    "Maya had been your classmate."
+    "She had disappeared three months ago."
+    menu:
+        "What will you do?"
+        "Go to classroom 3-B.":
+            jump classroom
+        "Look for the security guard.":
+            jump office
+        "Try to leave immediately.":
+            jump exit_attempt
+label classroom:
+    scene hallway at bg_fit
+    with dissolve
+    with hpunch
+    "You walked down the dark corridor."
+    "The door to the class 3-B stood open."
+
+    "Inside, every desk was empty."
+
+    "Except one."
+
+    "A schoolbag rested on the teacher's desk."
+
+    "You recognized it."
+
+    "It belonged to Maya."
+
+    "Beside it lay a notebook."
+
+    menu:
+        "Investigate the classroom."
+
+        "Open the notebook.":
+            jump notebook
+
+        "Look at the blackboard.":
+            jump blackboard
+
+        "Leave the classroom.":
+            jump office
+
+
+label notebook:
+
+    $ clues += 1
+    $ found_register = True
+    "You opened the notebook."
+    "The first few pages contained ordinary class note."
+    "The final pages were filled with names."
+
+    "Twenty names."
+
+    "All students from class 3-B."
+
+    "At the bottom of the page, someone had written your name."
+
+    centered "{color=#aa3333}[player_name] — ABSENT{/color}"
+
+    "You turned the page."
+
+    "A sentence was written in red ink."
+
+    m "If you can read this, don't answer when they call your name."
+
+    "A chair scraped behind you."
+
+    "You turned around."
+
+    "Nobody was there."
+
+    jump office
+
+
+label blackboard:
+
+
     
