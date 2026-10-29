@@ -132,7 +132,48 @@ label exit_attempt:
         "Answer your phone?"
         "Answer.":
             jump phone
-        "Ignore "
+        "Ignore it and find another way out.":
+            $ courage +=1
+            jump office
+label phone:
+    scene black
+    with dissolve
+    "You answered."
+    m "Why did you not come back for me?"
+    p "Maya?"
+    m "I have been waiting for three months."
+    p "Where are you?"
+    m "In the classroom."
+    p "You are not alive."
+    "Silence."
+    m "Neither are you."
+    "The call ended."
+    $ clues += 1
+    jump classroom
+label office:
+    scene office at bg_fit
+    with dissolve
+    with fade
+    "You entered the security office."
+    "The guard's chair was empty."
+    "A dusty monitor glowed on the desk."
+    "A digital attendance sheet was open."
+    centered "{color=#bbbbbb}CLASS 3-B -- NIGHT SESSION{/color}"
+    "You recognised the names."
+    "Maya."
+    "Then twenty other students."
+    "Then your own name."
+    centered "{color=#aa3333}[player_name] -- PRESENT{/color}"
+    "You had never entered your name."
+    "A printer started behind you."
+    "One sheet of paper emerged."
+    centered "{color=#bbbbbb}ONE STUDENT MUST REMAIN.{/color}"
+    "Footsteps approached the office."
+    m "Can I come in?"
+    menu:
+        "W"
+
+
 
 
 
