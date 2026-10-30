@@ -4,7 +4,7 @@ label start:
     scene black
     with fade 
     with dissolve 
-    centered "{size=45}{color = #990000}ATTENDANCE 0{/color}{/size}"
+    centered "{size=45}{color=#990000}ATTENDANCE 0{/color}{/size}"
     pause 2.0
     $ player_name = renpy.input("Enter your name:", default = "Alex").strip()
     if not player_name:
@@ -175,7 +175,7 @@ label office:
         "Let Maya Enter.":
             jump Maya
         "Hide beneath the desk.":
-            jump Hide
+            jump hide
         "Ask Maya what happened.":
             jump ask_Maya
 label ask_Maya:
@@ -284,6 +284,47 @@ label ending_erased:
     "She counted the desks."
     "Twenty."
     "Everything was in order."
+    "Nobody remembered that another student had ever existed."
+    centered "{size=32}{color=#990000}ENDING 2: ERASED.{/color}{/size}"
+    return
+label ending_last:
+    scene black
+    with hpunch
+    p  "Maya!!!"
+    "The entire building trembled."
+    "Every classroom door slammed shut."
+    "The speakers fell silent."
+    m "What have you done?"
+    p "I called your name."
+    m "You were not supposed to do that!"
+    "The bell rang three times."
+    "Every voice in the school began shouting."
+    centered "{color=#bbbbbb}PRESENT! PRESENT! PRESENT!{/color}"
+    "Maya grabbed your arm."
+    m "The list never ends."
+    m "Someone has to keep reading it."
+    "You took the attenndance register."
+    "Hundreds of names filled it's pages."
+    "The final page was blank."
+    "You wrote three words."
+    centered "{color=#aaaaaa}CLASS DISMISSED.{/color}"
+    "The school fell silent."
+    "The doors unlocked."
+    "Maya walked outside."
+    "For the first  time, she cast a shadow."
+    "Then she disappeared."
+    "Your phone vibrated."
+    centered "{color=#bbbbbb}NEW STUDENT ENROLLED{/color}"
+    centered "{color=#aa3333}[player_name]{/color}"
+    "The speakers crackled again."
+    u "Good evening, students."
+    centered "{size=32}{color=#990000}ENDING 3: THE LAST STUDENT{/color}{/size}"
+    return
+
+
+
+
+
 
 
 
