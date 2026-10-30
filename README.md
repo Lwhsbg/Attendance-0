@@ -20,3 +20,10 @@ Tech stack:
 
 I did not really struggled making this project as it was a very simple one, but something new was thinking about a new theme so it felt like a completely different type of game than I would usually make, and I recently just realized you can make a readme on vscode itself, I always used to do it from github.
 
+## Screenshots
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/551e521c-9767-42c3-a942-41b343ea4f97" />
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/492be8cc-7a2b-47ea-9b8c-fd463f49d9d6" />
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/95dbfcb2-7de0-4678-8a60-0686f01bf9f6" />
