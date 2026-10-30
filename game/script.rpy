@@ -223,6 +223,69 @@ label hide:
     "Someone entered."
     "A chair scraped across the floor."
     u "Student present."
+    "A pen scratched against paper."
+    u "Student absent."
+    "The footsteps stopped besides you."
+    u "Found you."
+    $ courage -= 1
+    jump final_scene
+label final_scene:
+    "The school bell rang."
+    "Once."
+    "Twice."
+    "Three times."
+    "The speakers then crackled."
+    centered "{color=#bbbbbb}CLASS 3-B. FINAL ATTENDANCE.{/color}"
+    centered "{color=#bbbbbb}Maya.{/color}"
+    m "Present."
+    centered "{color=#bbbbbb}Student number 20.{/color}"
+    "Silence."
+    centered "{color=#bbbbbb}[player_name].{/color}"
+    "Your name echoed throughout the building."
+    m "Do not answer."
+    u "Please confirm your presence."
+    menu:
+        "What is your answer?"
+        "Present.":
+            jump ending_present
+        "Remain silent.":
+            jump ending_erased
+        "Call out Maya's name":
+            jump ending_last 
+label ending_present:
+    scene black
+    with fade
+    p "Present."
+    "Every light in the school turned on."
+    "The doors unlocked and you walked outside."
+    "Your phone vibrated."
+    centered "{color=#bbbbbb}ATTENDANCE RECORD UPDATED{/color}"
+    centered "{color=#aa3333}[player_name] -- PRESENT{/color}"
+    "You then looked at the date on your phone."
+    "Three months ago."
+    "Your phone recieved one final message."
+    m "Thank you for staying."
+    "You looked back at the school."
+    "Every classroom was filled with students."
+    "All of them were staring at you."
+    centered "{size=32}{color=#990000}ENDING 1: PRESENT{/color}{/size}"
+    return
+label ending_erased:
+    scene black
+    with fade
+    "You said nothing."
+    centered "{color=#bbbbbb}No response recieved.{/color}"
+    "The lights went out."
+    m "Do not let them erase you!!"
+    "You tried to call out."
+    "No sound came out."
+    centered "{color=#bbbbbb}Student marked absent.{/color}"
+    "The next morning, a teacher entered classroom 3-B."
+    "She counted the desks."
+    "Twenty."
+    "Everything was in order."
+
+
 
 
 
