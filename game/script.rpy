@@ -171,7 +171,58 @@ label office:
     "Footsteps approached the office."
     m "Can I come in?"
     menu:
-        "W"
+        "What will you do?"
+        "Let Maya Enter.":
+            jump Maya
+        "Hide beneath the desk.":
+            jump Hide
+        "Ask Maya what happened.":
+            jump ask_Maya
+label ask_Maya:
+    "You stood near the door."
+    p "What happened three months ago?"
+    m "You really do not remember?"
+    p "Remember what?"
+    m "The final attendance."
+    m "Everyone answered except you."
+    p "That is impossible."
+    m "You left before the teacher finished."
+    m "The next morning, nobody remembered you."
+    p "But you are here."
+    m "I remembered."
+    "The door handles begin turning."
+    m "Now they are trying to finish the list."
+    jump Maya 
+label Maya:
+    "Maya entered the office."
+    show m at truecenter
+    with hpunch
+    "She looked exactly as she had three months ago."
+    "But something was wrong."
+    "She did not have a shadow."
+    p "Are you really Maya?"
+    m "Does it matter?"
+    p "Why are you here?"
+    m "Because you never answered."
+    "She placed an old class photograph on the desk."
+    "Everyone was smiling."
+    "Except you."
+    "Your face had been scratched out."
+    m "The final attendance begins at midnight."
+    p "What happens then?"
+    m "Someone will have to stay."
+    hide m 
+    with dissolve
+    jump final_scene
+label hide:
+    scene dark_classroom at bg_fit
+    with dissolve
+    with fade
+    "You crawled down beneath the desk."
+    "The door opened."
+    "Someone entered."
+    "A chair scraped across the floor."
+    u "Student present."
 
 
 
