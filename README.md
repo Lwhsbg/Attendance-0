@@ -20,6 +20,10 @@ Tech stack:
 
 I did not really struggled making this project as it was a very simple one, but something new was thinking about a new theme so it felt like a completely different type of game than I would usually make, and I recently just realized you can make a readme on vscode itself, I always used to do it from github.
 
+# New Features
+
+This was the first game where I tried a text popup in the middle of the scene to give more of a depth to some specific lines inside the story.
+
 ## Screenshots
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/551e521c-9767-42c3-a942-41b343ea4f97" />
